@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQIYu
 
 scoreboard players set @s unloadtime 60
 scoreboard players set @s cdcooldown 9999
@@ -11,8 +12,8 @@ effect clear @s jump_boost
 
 scoreboard players set @s plt2 60
 
-tag @s add counter
 scoreboard players add @s[tag=!counter_dodge] move_loop 1
+scoreboard players add @s[tag=!counter_dodge] counter 1
 tag @s add counter_dodge
 
 function ut:move/head/change

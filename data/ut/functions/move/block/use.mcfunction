@@ -1,12 +1,13 @@
 #By Nebulirion
+#Edit By LiuQIYu
 
 scoreboard players set @s unloadtime 60
 scoreboard players set @s cdcooldown 9999
 function ut:player/infight/use
 
 scoreboard players set @s plt2 60
-tag @s add counter
 scoreboard players add @s[tag=!counter_block] move_loop 1
+scoreboard players add @s[tag=!counter_block] counter 1
 tag @s add counter_block
 
 attribute @s generic.knockback_resistance modifier add 1-0-0-5-100 "blockkbr" 1.0 add

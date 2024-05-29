@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQIYu
 
 scoreboard players set @s unloadtime 16
 scoreboard players add @s cdcooldown 2
@@ -14,8 +15,8 @@ data modify block 255 0 255 Items[0].tag.org_trident set from entity @s Selected
 item replace entity @s weapon.mainhand from block 255 0 255 container.0
 
 scoreboard players set @s plt1 12
-tag @s add counter
 scoreboard players add @s[tag=!trident_user] move_loop 1
+scoreboard players add @s[tag=!trident_user] counter 1
 tag @s add trident_user
 
 function ut:move/trident/use_orange

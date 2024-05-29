@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQIYu
 
 ###
 execute as @e[tag=atker,limit=1] store result score rx1 store run data get entity @s Rotation[0]
@@ -18,8 +19,8 @@ execute if entity @e[tag=atker,tag=!cutable] run tag @s add cut_fail
 
 scoreboard players set #broken damage 0
 
-execute if entity @s[tag=cut_fail] run function ut:move/counter/fail
 execute unless entity @s[tag=cut_fail] as @e[tag=atker,tag=cutable,limit=1] at @s run function ut:move/trident/break/main
+execute unless entity @s[tag=cut_fail] run tag @s add counter_success
 
 scoreboard players operation #broken damage /= 5 const
 scoreboard players operation @s cd += #broken damage

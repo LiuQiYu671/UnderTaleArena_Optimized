@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQIYu
 #
 #
 data modify block 255 0 255 Items set value [{Slot:0b,id:"minecraft:carrot_on_a_stick",Count:1b}]
@@ -16,7 +17,7 @@ attribute @s generic.movement_speed modifier remove 6-0-0-2-0
 
 scoreboard players reset @s plt1
 scoreboard players remove @s[tag=trident_user] move_loop 1
+scoreboard players remove @s[tag=trident_user] counter 1
 tag @s remove trident_user
-function ut:move/counter/stop
 
 function ut:player/infight/use

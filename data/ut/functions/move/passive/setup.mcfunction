@@ -1,8 +1,10 @@
 #By Nebulirion
+#Edit By LiuQIYu
 
 execute unless data entity @s Inventory[{tag:{sp_show:1b}}] run clear @s carrot_on_a_stick{sp_switch:1b}
 execute if entity @s[tag=passive_asgore] run clear @s carrot_on_a_stick{nomercy:1b}
 execute if entity @s[tag=passive_mettaton] run function ut:move/passive/mettaton/clear
+execute if entity @s[tag=passive_sans] run function ut:move/passive/sans/clear
 ###
 tag @s remove passive_sans_cd
 tag @s remove passive_muffet_cd
@@ -51,4 +53,5 @@ scoreboard players set @s passive_timer 0
 execute if entity @s[tag=dt_ready] run function ut:move/passive/dt_fill
 execute if entity @s[tag=passive_asgore] run function ut:move/nomercy/passive
 execute if entity @s[tag=passive_mettaton] run function ut:move/passive/mettaton/give
+execute if entity @s[tag=passive_sans] run function ut:move/passive/sans/give
 execute if data entity @s Inventory[{tag:{sp_show:1b}}] unless data entity @s Inventory[{tag:{sp_switch:1b}}] run function ut:move/sp_show/switch/give

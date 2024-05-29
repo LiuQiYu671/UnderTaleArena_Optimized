@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQIYu
 
 ###
 scoreboard objectives add infolink_timer dummy "INFOLINK TIMER"
@@ -84,6 +85,7 @@ scoreboard objectives add gamesfinished dummy "Games Finished"
 scoreboard objectives add stat dummy "Statistics"
 scoreboard objectives add maplock dummy "Map Lock"
 scoreboard objectives add tobylock dummy "Toby Lock"
+scoreboard objectives add counter dummy
 ###
 scoreboard objectives add menu dummy "LOBBY MENU"
 scoreboard objectives add st_gold dummy "GOLD"
@@ -357,6 +359,7 @@ scoreboard objectives add talk_flowey dummy
 scoreboard objectives add credit dummy
 scoreboard objectives add credit_hit dummy
 scoreboard objectives add soul dummy
+scoreboard objectives add reload_confrim dummy
 #
 scoreboard objectives add tut_s dummy
 scoreboard objectives add tut_st dummy
