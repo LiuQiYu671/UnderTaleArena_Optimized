@@ -12,11 +12,6 @@ execute as @e[tag=warp] if score @s pid = #user pid run tag @s add warp_using
 #execute if entity @e[tag=warp_target,limit=1,distance=0.001..] at @e[tag=warp_target,limit=1] run tp @s ~ ~ ~
 
 #score set
-##cd cd
-#scoreboard players add @s cdcooldown 1
-##cd restore show
-#execute if score @s cddis matches ..99 run scoreboard players add @s cddis 5
-#execute if score @s cddis matches 100.. run scoreboard players operation @s cd = @s cdmax
 ##player loop removing
 scoreboard players remove @s plt2 1
 

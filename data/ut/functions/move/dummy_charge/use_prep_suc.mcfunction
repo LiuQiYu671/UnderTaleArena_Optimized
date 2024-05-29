@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 playsound minecraft:item.crossbow.loading_start player @s ~ ~ ~ 1.2 1.5
 
@@ -15,6 +16,5 @@ attribute @s generic.movement_speed modifier add 4-0-17-2-0 "dummychargeslow" -0
 
 scoreboard players set @s plt1 30
 
-#scoreboard players set @s cddis 1
 scoreboard players add @s[tag=!dummy_charge_user] move_loop 1
 tag @s add dummy_charge_user

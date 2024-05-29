@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 scoreboard players add @s plt2b 1
 execute if score @s plt2b matches 2.. run playsound minecraft:block.piston.extend player @a ~ ~ ~ .2 1.3
@@ -13,8 +14,10 @@ execute unless data entity @s SelectedItem.tag.bomb_mtt run function ut:move/bom
 effect give @s levitation 2 3 true
 scoreboard players add @s[tag=!effect_shocked] cdcooldown 1
 
-execute if score @s cddis matches ..99 run scoreboard players add @s cddis 10
-execute if score @s cddis matches 100.. run scoreboard players operation @s cd = @s cdmax
+scoreboard players operation #temp cd = @s cdmax
+scoreboard players operation #temp cd /= 10 const
+scoreboard players operation @s cd += #temp cd
+function ut:player/cd/change
 
 scoreboard players remove @s plt2 1
 
