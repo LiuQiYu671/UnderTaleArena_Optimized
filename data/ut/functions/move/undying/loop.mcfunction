@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 scoreboard players add @s undying_total 1
 #particles
@@ -13,7 +14,7 @@ execute if score @s hp matches ..0 if score @s dt matches ..200 run particle ite
 #execute if score @s mp < @s mpmax run function ut:player/mp/regenerate
 
 function ut:player/infight/use
-scoreboard players operation @s dt -= @s plt3
+scoreboard players operation #lose dt = @s plt3
 function ut:player/dt/lose
 execute if score @s dt matches ..0 run function ut:move/undying/stop
 #

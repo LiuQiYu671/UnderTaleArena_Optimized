@@ -1,8 +1,9 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 execute unless data entity @s SelectedItem.tag.gaster_blaster run function ut:move/gaster_blaster/stop
 
-scoreboard players operation @s dt -= @s plt3b
+scoreboard players operation #lose dt = @s plt3b
 function ut:player/dt/lose
 tag @s add dt_ready
 #

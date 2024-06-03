@@ -1,10 +1,11 @@
 #Original By Nebulirion, edited by SY
+#Edit By LiuQiYu
 
 #for check user
 tag @s add delete_p
 
 #dt bar showing
-scoreboard players operation @s dt -= @s plt3b
+scoreboard players operation #lose dt = @s plt3b
 function ut:player/dt/lose
 tag @s add dt_ready
 
