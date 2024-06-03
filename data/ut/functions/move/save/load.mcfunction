@@ -1,4 +1,7 @@
 #By Nebulirion
+#Edit By LiuQiYu
+
+tag @s add save_loading
 #
 #stick item remove
 execute as @e[tag=stickonhit] if score @s sid = #user pid run function ut:void
@@ -38,7 +41,6 @@ scoreboard players set @s dt 0
 #HP
 scoreboard players operation #gain hp = @s hpmax
 scoreboard players operation #gain hp /= 4 const
-scoreboard players operation @s hp += #gain hp
 function ut:player/hp/gain
 function ut:player/bossbar/refresh
 #WL
@@ -50,3 +52,5 @@ scoreboard players operation @s mp = @s mpmax
 scoreboard players operation @s cd = @s cdmax
 scoreboard players set @s melee_cd 0
 function ut:player/actionbar/refresh_stats
+#
+tag @s remove save_loading

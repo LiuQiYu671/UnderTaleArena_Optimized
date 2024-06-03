@@ -1,8 +1,9 @@
 #BY NEBULIRION
+#Edit By LiuQiYu
 #
 scoreboard players set #gain hp 200
 scoreboard players operation @s hpmax += #gain hp
-scoreboard players operation @s[tag=!hp_lock] hp += #gain hp
+function ut:player/hp/gain
 #
 scoreboard players add @s atk 10
 scoreboard players add @s lv 1

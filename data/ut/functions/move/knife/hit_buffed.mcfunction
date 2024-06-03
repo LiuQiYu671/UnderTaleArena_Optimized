@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 playsound entity.warden.attack_impact player @a ~ ~ ~ 0.75 2
 
@@ -10,6 +11,6 @@ execute facing entity @s feet positioned ~ ~1.04 ~ positioned ^ ^ ^2.25 run part
 
 execute if entity @s[tag=!hp_lock] at @s run particle happy_villager ~ ~.9 ~ 0.3 0.45 0.3 0 3 normal @a[scores={Q=1..}]
 
-execute if entity @s[tag=!hp_lock] run scoreboard players add @s hp 100
+scoreboard players set #gain hp 100
 
-execute if entity @s[tag=!hp_lock] run function ut:player/hp/gain
+function ut:player/hp/gain

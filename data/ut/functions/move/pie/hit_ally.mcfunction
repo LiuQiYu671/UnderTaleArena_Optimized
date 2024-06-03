@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 
 
@@ -7,8 +8,8 @@ execute unless score @s pid = #atker pid as @a[tag=playing] if score @s pid = #a
 
 scoreboard players operation #before hp = @s hp
 
-execute if entity @s[tag=!hp_lock] run scoreboard players add @s hp 400
-execute if entity @s[tag=!hp_lock] run function ut:player/hp/gain
+scoreboard players set #gain hp 400
+function ut:player/hp/gain
 
 scoreboard players operation #after hp = @s hp
 
