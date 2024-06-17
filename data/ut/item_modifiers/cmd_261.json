@@ -1,4 +1,0 @@
-{
-    "function":"minecraft:set_nbt",
-    "tag": "{CustomModelData:261,is_knife:0b}"
-}

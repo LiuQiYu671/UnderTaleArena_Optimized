@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#minecraft:impermeable",
-    "minecraft:slime_block",
-    "minecraft:bedrock",
-    "minecraft:lava"
-  ]
-}
