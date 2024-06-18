@@ -24,11 +24,41 @@ scoreboard players set @s talk_flowey 0
 scoreboard players reset @s frog_talk 
 scoreboard players reset @s frogfilter 
 
-attribute @s generic.movement_speed modifier remove chrspeed1
-attribute @s generic.movement_speed modifier remove chrspeed2
-attribute @s generic.movement_speed modifier remove chrspeed3
-attribute @s generic.movement_speed modifier remove chrspeed4
-attribute @s generic.movement_speed modifier remove chrspeed5
+attribute @s generic.movement_speed modifier remove 00000000-0000-0000-0001-000000000025
+attribute @s generic.movement_speed modifier remove 00000000-0000-0000-0001-000000000021
+attribute @s generic.movement_speed modifier remove 00000000-0000-0000-0001-000000000017
+attribute @s generic.movement_speed modifier remove 00000000-0000-0000-0001-000000000013
+attribute @s generic.movement_speed modifier remove 00000000-0000-0000-0001-000000000009
+attribute @s generic.knockback_resistance modifier remove 00000011-0000-0000-0005-000000000100
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0002-000000000000
+attribute @s generic.knockback_resistance modifier remove 00000001-0000-0000-0005-000000000100
+attribute @s generic.knockback_resistance modifier remove 00000024-0000-0000-0005-000000000100
+attribute @s generic.movement_speed modifier remove 00000002-0000-0000-0002-000000000000
+attribute @s generic.knockback_resistance modifier remove 00000002-0000-0000-0005-000000000100
+attribute @s generic.movement_speed modifier remove 00000004-0000-0017-0002-000000000000
+attribute @s generic.movement_speed modifier remove 00000008-0000-0000-0003-000000000000
+attribute @s generic.movement_speed modifier remove 00000020-0004-0000-0003-000000000000
+attribute @s generic.movement_speed modifier remove 00000000-0856-0000-0001-000000000001
+attribute @s generic.movement_speed modifier remove 00000000-0856-0000-0001-000000000002
+attribute @s generic.movement_speed modifier remove 00000000-0856-0000-0001-000000000003
+attribute @s generic.movement_speed modifier remove 00000000-0856-0000-0001-000000000004
+attribute @s generic.movement_speed modifier remove 00000000-0856-0000-0001-000000000005
+attribute @s generic.knockback_resistance modifier remove 00000033-0000-0000-0005-000000000100
+attribute @s generic.movement_speed modifier remove 00000009-0000-0000-0002-000000000000
+attribute @s generic.knockback_resistance modifier remove 00000008-0000-0000-0005-000000000100
+attribute @s generic.movement_speed modifier remove 00000005-0000-0000-0002-000000000000
+attribute @s generic.movement_speed modifier remove 00000012-0000-0000-0001-000000000000
+attribute @s generic.knockback_resistance modifier remove 00000012-0000-0000-0005-000000000100
+attribute @s generic.movement_speed modifier remove 00000007-0000-0000-0003-000000000000
+attribute @s generic.movement_speed modifier remove 00000003-0000-0000-0002-000000000000
+attribute @s generic.movement_speed modifier remove 00000004-0000-0000-0002-000000000000
+attribute @s generic.movement_speed modifier remove 00000006-0000-0000-0002-000000000000
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0001-000000000001
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0001-000000000002
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0001-000000000003
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0001-000000000004
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0001-000000000005
+attribute @s generic.movement_speed modifier remove 00000001-0000-0000-0001-000000000006
 
 execute if score @s ptid matches 1.. run scoreboard players operation @s tid = @s ptid
 scoreboard players reset @s ptid

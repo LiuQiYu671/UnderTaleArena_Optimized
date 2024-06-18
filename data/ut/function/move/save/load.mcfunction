@@ -1,7 +1,6 @@
 #By Nebulirion
 #Edit By LiuQiYu
 
-tag @s add save_loading
 #
 #stick item remove
 execute as @e[tag=stickonhit] if score @s sid = #user pid run function ut:void
@@ -49,4 +48,3 @@ scoreboard players operation @s cd = @s cdmax
 scoreboard players operation @s ml = @s mlmax
 function ut:player/actionbar/refresh_stats
 #
-tag @s remove save_loading

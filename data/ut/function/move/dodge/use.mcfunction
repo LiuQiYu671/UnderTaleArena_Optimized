@@ -1,5 +1,5 @@
 #By Nebulirion
-#Edit By LiuQiYu 
+#Edit By LiuQiYu
 
 scoreboard players set @s unloadtime 60
 scoreboard players set @s cdcooldown 9999

@@ -1,4 +1,5 @@
 #BY NEBULIRION
+#Edit By LiuQiYu
 #
 scoreboard players set #gain hp 200
 scoreboard players operation @s hpmax += #gain hp

@@ -2,7 +2,6 @@
 #Edit By LiuQiYu
 
 scoreboard players set #fullUndoFlag store 0
-
 ##
 execute if entity @s[tag=attack_buffed] run scoreboard players set #fullUndoFlag store 1
 #

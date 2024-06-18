@@ -12,5 +12,4 @@ execute facing entity @s feet positioned ~ ~1.04 ~ positioned ^ ^ ^2.25 run part
 execute if entity @s[tag=!hp_lock] at @s run particle happy_villager ~ ~.9 ~ 0.3 0.45 0.3 0 3 normal @a[scores={Q=1..}]
 
 scoreboard players set #gain hp 100
-
 function ut:player/hp/gain

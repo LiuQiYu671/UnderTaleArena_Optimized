@@ -2,6 +2,7 @@
 
 scoreboard players set @s unloadtime 12
 
+effect clear @s levitation
 attribute @s generic.knockback_resistance modifier remove angelkbr
 attribute @s generic.gravity modifier remove angelgrav
 

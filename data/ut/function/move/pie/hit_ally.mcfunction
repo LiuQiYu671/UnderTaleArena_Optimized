@@ -1,5 +1,5 @@
 #By Nebulirion
-
+#Edit By LiuQiYu 
 
 
 execute unless score @s pid = #atker pid as @a[tag=playing] if score @s pid = #atker pid at @s run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 2

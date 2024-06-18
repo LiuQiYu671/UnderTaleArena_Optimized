@@ -32,6 +32,7 @@ execute if score flowey tutorial matches 9.. unless score @s cdcooldown matches 
 execute if score flowey tutorial matches 15.. if entity @s[tag=!dt_ready] if score @s will > #dtLim will run function ut:player/dt/regenerate
 
 ###Right Click
+#scoreboard players remove @s[scores={unloadtime=1..}] unloadtime 1
 execute if score flowey tutorial matches 7.. if data entity @s SelectedItem.components."minecraft:custom_data".sp_move if score @s rc matches 1.. at @s run function ut:player/rc_cond
 execute if score flowey tutorial matches 7.. if data entity @s SelectedItem.components."minecraft:custom_data".mp_move if score @s rc matches 1.. at @s run function ut:player/rc_cond
 execute if score flowey tutorial matches 9.. if data entity @s SelectedItem.components."minecraft:custom_data".cd_move if score @s rc matches 1.. at @s run function ut:player/rc_cond

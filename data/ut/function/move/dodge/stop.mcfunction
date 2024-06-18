@@ -1,6 +1,7 @@
 #By Nebulirion
-#Edit By LiuQiYu 
+#Edit By LiuQiYu
 
+#effect clear @s speed
 effect give @s minecraft:jump_boost infinite 0 true
 
 attribute @s generic.movement_speed modifier remove dodgeslow

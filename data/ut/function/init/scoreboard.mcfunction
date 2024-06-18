@@ -85,6 +85,7 @@ scoreboard objectives add gamesfinished dummy "Games Finished"
 scoreboard objectives add stat dummy "Statistics"
 scoreboard objectives add maplock dummy "Map Lock"
 scoreboard objectives add tobylock dummy "Toby Lock"
+scoreboard objectives add counter dummy
 ###
 scoreboard objectives add menu dummy "LOBBY MENU"
 scoreboard objectives add st_gold dummy "GOLD"

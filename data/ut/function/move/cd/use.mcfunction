@@ -1,7 +1,7 @@
 #By Nebulirion
 #Edit By LiuQiYu
 
-scoreboard players operation @s cd -= @s cdmax
+scoreboard players set @s cd 0
 function ut:player/cd/change
 
 execute store result score @s cdmax run data get entity @s SelectedItem.components."minecraft:custom_data".cd
