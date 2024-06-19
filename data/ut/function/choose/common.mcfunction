@@ -1,8 +1,11 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 #
 function ut:choose/soul
-execute unless score @s chr matches 8 run function ut:choose/spare
+tag @s[scores={chr=8}] add no_spare_chr
+execute unless entity @s[tag=no_spare_chr] run function ut:choose/spare
+tag @s[tag=no_spare_chr] remove no_spare_chr
 execute if score -InGame game matches 1 if score -TeamMode game matches 1 if score teamUniform gamerule matches 1 run function ut:choose/uniform
 #
 execute if score @s chr matches 12 if score -InGame game matches 0 run loot replace entity @s inventory.8 loot ut:dog
