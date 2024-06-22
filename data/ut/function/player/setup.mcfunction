@@ -22,6 +22,8 @@ scoreboard players set @s passive_timer 0
 scoreboard players set @s filter_l 0
 scoreboard players set @s filter_r 0
 #
+scoreboard players reset @s eaid
+scoreboard players reset @s evid
 scoreboard players reset @s damage_resisted
 scoreboard players reset @s damage_dealt
 scoreboard players reset @s rc

@@ -18,12 +18,21 @@ execute as @a run function ut:player/bossbar/refresh
 execute if score -InGame game matches 1 run scoreboard players add @a bid 0
 execute if score -InGame game matches 1 if score -GameMode game matches 4.. run scoreboard players add @a tbid 0
 
-bossbar set p0_line2 players @a[scores={bid=..0},tag=!respawning]
+# SPECTATING AND RESPAWNING TEXT DISPLAY
+execute if score -GameMode game matches 4 run tag @a[scores={bid=..0}] add bossbar_spectate
+execute unless score -GameMode game matches 4 unless score #ended game matches 1 run tag @a[scores={bid=..0},tag=!respawning] add bossbar_spectate
+execute unless score -GameMode game matches 4 unless score #ended game matches 1 run tag @a[scores={bid=..0},tag=respawning] add bossbar_respawn
+execute unless score -GameMode game matches 4 if score #ended game matches 1 run tag @a[scores={bid=..0}] add bossbar_spectate
 
-execute if score -GameMode game matches 4 run bossbar set p0_line2 players @a[scores={bid=..0},tag=respawning]
+# you are spectator
+bossbar set p0_line2 players @a[tag=bossbar_spectate]
+# you are respawning
+bossbar set p0_line3 players @a[tag=bossbar_respawn]
 
-execute unless score -GameMode game matches 4 unless score #ended game matches 1 run bossbar set p0_line3 players @a[scores={bid=..0},tag=respawning]
-execute unless score -GameMode game matches 4 if score #ended game matches 1 run bossbar set p0_line2 players @a[scores={bid=..0},tag=respawning]
+#clear tags
+tag @a remove bossbar_spectate
+tag @a remove bossbar_respawn
+#
 
 bossbar set p0_line1 players @a[scores={bid=..0}]
 

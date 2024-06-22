@@ -20,3 +20,5 @@ function ut:move/soul/cast
 
 item replace entity @s weapon.mainhand with air
 execute store result score @s soul_count run clear @s carrot_on_a_stick[custom_data~{soul:1b}] 0
+
+execute if items entity @s inventory.* minecraft:carrot_on_a_stick[custom_data~{soul:1b}] run function ut:move/soul/use_refill

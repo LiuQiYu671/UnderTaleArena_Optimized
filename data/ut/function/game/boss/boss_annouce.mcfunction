@@ -15,6 +15,7 @@ kill @e[tag=soul_animation]
 scoreboard players set @s untarget_timer 60
 scoreboard players set @s unloadtime 0
 effect clear @s slowness
+effect clear @s weakness
 effect clear @s glowing
 
 execute as @a[tag=boss] at @s run function ut:system/soul/uncan/main

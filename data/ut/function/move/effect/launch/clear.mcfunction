@@ -3,7 +3,6 @@
 scoreboard players reset @s launch_timer
 
 effect clear @s minecraft:levitation
-effect give @s[tag=king_fall] levitation 5 100
 effect give @s[tag=delete_user,scores={plt3=81..}] levitation 1 4 true
 effect give @s[tag=delete_user,scores={plt3=..80}] levitation 10 0 true
 effect give @s[tag=bomb_mtt_user] levitation 2 3 true

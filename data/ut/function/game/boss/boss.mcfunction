@@ -65,4 +65,5 @@ team join boss @s
 function ut:move/effect/untargetable/give
 scoreboard players set @s untarget_timer 100
 scoreboard players set @s unloadtime 9999999
-effect give @s slowness infinite 124
+effect give @s slowness 5 124
+effect give @s weakness 5 124
