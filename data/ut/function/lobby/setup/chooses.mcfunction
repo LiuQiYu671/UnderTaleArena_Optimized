@@ -4,7 +4,7 @@ execute rotated ~8 0 positioned ^ ^ ^31.5 rotated ~180 ~ run function ut:lobby/s
 data merge entity @e[tag=summon,limit=1] {CustomName:'{"translate":"chr.sans","color":"yellow","bold":true}',Pose:{LeftArm:[340f,340f,0f]}}
 scoreboard players set @e[tag=summon] chr 1
 execute as @e[tag=summon] run function ut:choose/storage
-item replace entity @e[tag=summon] weapon.offhand with bone_meal 
+item replace entity @e[tag=summon] weapon.offhand with bone_meal
 execute as @e[tag=summon] at @s run tp @s ~ ~ ~ ~ ~
 tag @e[tag=summon] add sans_select
 tag @e[tag=summon] remove summon
@@ -13,7 +13,7 @@ execute rotated ~14 0 positioned ^ ^ ^31.5 rotated ~180 ~ run function ut:lobby/
 data merge entity @e[tag=summon,limit=1] {CustomName:'{"translate":"chr.papyrus","color":"yellow","bold":true}'}
 scoreboard players set @e[tag=summon] chr 2
 execute as @e[tag=summon] run function ut:choose/storage
-item replace entity @e[tag=summon] weapon.mainhand with bone 
+item replace entity @e[tag=summon] weapon.mainhand with bone
 execute as @e[tag=summon] at @s run tp @s ~ ~ ~ ~ ~
 tag @e[tag=summon] add papyrus_select
 tag @e[tag=summon] remove summon
@@ -22,7 +22,7 @@ execute rotated ~20 0 positioned ^ ^ ^31.5 rotated ~180 ~ run function ut:lobby/
 data merge entity @e[tag=summon,limit=1] {CustomName:'{"translate":"chr.undyne","color":"yellow","bold":true}'}
 scoreboard players set @e[tag=summon] chr 3
 execute as @e[tag=summon] run function ut:choose/storage
-item replace entity @e[tag=summon] weapon.mainhand with light_blue_dye 
+item replace entity @e[tag=summon] weapon.mainhand with light_blue_dye
 execute as @e[tag=summon] at @s run tp @s ~ ~ ~ ~ ~
 tag @e[tag=summon] add undyne_select
 tag @e[tag=summon] remove summon

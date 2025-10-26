@@ -17,7 +17,7 @@ execute if score -use map matches 7 run tp @s -1280.50 48.50 1279.50
 #newhome
 execute if score -use map matches 8 run tp @s 2304 74.5 1280
 #sans
-execute if score -use map matches 9 run tp @s 1280.50 83.50 2304.50 
+execute if score -use map matches 9 run tp @s 1280.50 83.50 2304.50
 #true lab
 execute if score -use map matches 10 run tp @s 2820.0 25.5 752.0
 #undyne's house

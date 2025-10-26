@@ -51,7 +51,7 @@ scoreboard objectives add snail_timer dummy
 scoreboard objectives add maze_timer dummy
 scoreboard objectives add undying_total dummy
 scoreboard objectives add random dummy
-scoreboard objectives add favourite dummy 
+scoreboard objectives add favourite dummy
 scoreboard objectives add daytime dummy
 scoreboard objectives add tbid dummy "Team Battle ID"
 scoreboard objectives add etid dummy "Enemy Team ID"
@@ -85,7 +85,7 @@ scoreboard objectives add gamesfinished dummy "Games Finished"
 scoreboard objectives add stat dummy "Statistics"
 scoreboard objectives add maplock dummy "Map Lock"
 scoreboard objectives add tobylock dummy "Toby Lock"
-scoreboard objectives add counter dummy
+scoreboard objectives add counter dummy "Counter State"
 ###
 scoreboard objectives add menu dummy "LOBBY MENU"
 scoreboard objectives add st_gold dummy "GOLD"
@@ -284,7 +284,7 @@ scoreboard objectives add range dummy
 scoreboard objectives add gravity dummy
 scoreboard objectives add width dummy "W"
 scoreboard objectives add height dummy "H"
-scoreboard objectives add offset dummy 
+scoreboard objectives add offset dummy
 #minecraft
 scoreboard objectives add rc minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add jump minecraft.custom:minecraft.jump
@@ -394,7 +394,7 @@ scoreboard players add @a tpd 0
 scoreboard players add @a atk 0
 scoreboard players add @a def 0
 scoreboard players add @a will 0
-scoreboard players add @a last_fight 0
+# scoreboard players add @a last_fight 0
 scoreboard players add @a unloadtime 0
 scoreboard players add @a tobylock 0
 #
@@ -405,7 +405,7 @@ execute as @a run scoreboard players operation @s[scores={hp=0}] hp = @s hpmax
 execute as @a run scoreboard players operation @s[scores={mp=0}] mp = @s mpmax
 execute as @a run scoreboard players operation @s[scores={cd=0}] cd = @s cdmax
 scoreboard players set @a[scores={dtmax=0}] dtmax 20
-scoreboard players set @a[scores={last_fight=0}] last_fight 0
+# scoreboard players set @a[scores={last_fight=0}] last_fight 0
 scoreboard players set @a[scores={unloadtime=0}] unloadtime 0
 scoreboard players set @a[scores={lv=0}] lv 1
 scoreboard players set @a[scores={will=0}] will 100

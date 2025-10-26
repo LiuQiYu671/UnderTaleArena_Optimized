@@ -13,4 +13,4 @@ data modify block 255 0 255 Items[0].id set value "minecraft:leather_chestplate"
 execute store result block 255 0 255 Items[0].components."minecraft:dyed_color".rgb int 1 run scoreboard players get -color store
 item replace entity @s armor.chest from block 255 0 255 container.0
 
-playsound item.armor.equip_leather player @s ~ ~ ~ 2 1 
+playsound item.armor.equip_leather player @s ~ ~ ~ 2 1

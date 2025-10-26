@@ -3,7 +3,7 @@
 scoreboard players add @s mpcooldown 2
 scoreboard players add @s cdcooldown 2
 
-playsound entity.zombie_villager.cure player @s[tag=!effect_shocked] ~ ~ ~ 0.3 2 
+playsound entity.zombie_villager.cure player @s[tag=!effect_shocked] ~ ~ ~ 0.3 2
 
 scoreboard players set @s shocked_timer 60
 scoreboard players add @s[tag=!effect_shocked] move_loop 1

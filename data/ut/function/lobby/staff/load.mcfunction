@@ -108,16 +108,16 @@ execute at @e[tag=lobby_center] run summon chicken ~-3 ~-5 ~15 {ForcedAge:1,Sile
 ###
 
 #temz (252.5 143 1274.5; z: 0,-2,-4,-6)
-execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-6 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem"],Rotation:[-90.0f],CustomName:'"Tem"'}
+execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-6 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem"],Rotation:[-90.0f,0.0f],CustomName:'"Tem"'}
 
-execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-8 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem"],Rotation:[-90.0f],CustomName:'"Tem"'}
+execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-8 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem"],Rotation:[-90.0f,0.0f],CustomName:'"Tem"'}
 
-execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-10 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem"],Rotation:[-90.0f],CustomName:'"Tem"'}
+execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-10 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem"],Rotation:[-90.0f,0.0f],CustomName:'"Tem"'}
 
-execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-12 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem","bob"],Rotation:[-90.0f],CustomName:'"Bob"'}
+execute at @e[tag=lobby_center] run summon cat ~-20 ~-10 ~-12 {NoAI:1b,NoGravity:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Sitting:1b,variant:"white",Tags:["staff","tem","bob"],Rotation:[-90.0f,0.0f],CustomName:'"Bob"'}
 
 #statue (257.5 141.75 1265.5)
-execute at @e[tag=lobby_center] run summon snow_golem ~-15 ~-11.25 ~-15 {NoGravity:1b,NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Pumpkin:0b,Tags:["staff","tem","woa"],CustomName:'"Tem Statu"',Rotation:[0.0f]}
+execute at @e[tag=lobby_center] run summon snow_golem ~-15 ~-11.25 ~-15 {NoGravity:1b,NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Pumpkin:0b,Tags:["staff","tem","woa"],CustomName:'"Tem Statu"',Rotation:[0.0f,0.0f]}
 
 #========================================
 #paints
@@ -205,7 +205,7 @@ execute at @e[tag=lobby_center] run setblock ~-18 ~-11 ~13 lever[powered=false,f
 ##Fast (254 142 1290)
 execute at @e[tag=lobby_center] run setblock ~-18 ~-11 ~10 lever[powered=false,face=floor,facing=east]
 ##under (284 140 1291)
-execute at @e[tag=lobby_center] run setblock ~12 ~-13 ~11 lever[powered=false,face=wall,facing=west] 
+execute at @e[tag=lobby_center] run setblock ~12 ~-13 ~11 lever[powered=false,face=wall,facing=west]
 ##dance (258 141 1268)
 execute at @e[tag=lobby_center] run setblock ~-14 ~-12 ~-12 warped_button[face=floor]
 ##reset (276 135 1297)
