@@ -1,5 +1,4 @@
 #By Nebulirion
-#Edit By LiuQiYu
 
 ###
 scoreboard objectives add infolink_timer dummy "INFOLINK TIMER"
@@ -393,6 +392,7 @@ scoreboard players add @a tpd 0
 scoreboard players add @a atk 0
 scoreboard players add @a def 0
 scoreboard players add @a will 0
+scoreboard players add @a last_fight 0
 scoreboard players add @a unloadtime 0
 scoreboard players add @a tobylock 0
 #
@@ -403,6 +403,7 @@ execute as @a run scoreboard players operation @s[scores={hp=0}] hp = @s hpmax
 execute as @a run scoreboard players operation @s[scores={mp=0}] mp = @s mpmax
 execute as @a run scoreboard players operation @s[scores={cd=0}] cd = @s cdmax
 scoreboard players set @a[scores={dtmax=0}] dtmax 20
+scoreboard players set @a[scores={last_fight=0}] last_fight 0
 scoreboard players set @a[scores={unloadtime=0}] unloadtime 0
 scoreboard players set @a[scores={lv=0}] lv 1
 scoreboard players set @a[scores={will=0}] will 100

@@ -8,7 +8,7 @@ scoreboard players set DISPLAY leaderboard_rank 5
 
 function ut:init/scoreboard_install_1_2_2
 function ut:init/scoreboard_install_1_2_3
-function ut:init/scoreboard
+function ut:init/scoreboard_lqy
 
 function ut:stats/sync_totalgames
 

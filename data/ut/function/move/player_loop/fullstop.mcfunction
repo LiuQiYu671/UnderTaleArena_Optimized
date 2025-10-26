@@ -1,4 +1,5 @@
 #By Nebulirion
+#Edit By LiuQiYu
 
 tag @s[tag=!boss] remove no_mc_dmg
 execute if entity @s[tag=has_save] run function ut:move/save/stop
@@ -48,3 +49,4 @@ function ut:move/player_loop/fullstoplite
 
 #say Move Loop -> 0!
 scoreboard players set @s move_loop 0
+scoreboard players set @s counter 0
