@@ -1,4 +1,5 @@
 ###Generated from Nebulagen made By Nebulirion
+#Edit By LiuQiYu
 #06/19/2021, 22:22:11
 
 execute unless entity @a run say *Server Restart Detected*
@@ -8,7 +9,7 @@ scoreboard players set DISPLAY leaderboard_rank 5
 
 function ut:init/scoreboard_install_1_2_2
 function ut:init/scoreboard_install_1_2_3
-function ut:init/scoreboard_lqy
+function ut:init/scoreboard_optimized
 
 function ut:stats/sync_totalgames
 

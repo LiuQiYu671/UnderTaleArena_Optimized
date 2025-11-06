@@ -1,5 +1,4 @@
 #By Nebulirion
-#Edit By LiuQiYu
 
 ###
 scoreboard objectives add infolink_timer dummy "INFOLINK TIMER"
