@@ -1,4 +1,4 @@
 #Edit By LiuQiYu
 
 
-scoreboard objectives add counter dummy "Counter"
+scoreboard objectives add counter dummy "Counter State"
